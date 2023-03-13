@@ -1,91 +1,66 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    return (
+        <main className="bg-gray-100 flex ">
+            <section className="flex flex-col p-8 gap-4 w-1/2">
+                <header className="flex flex-col gap-4">
+                    <div>
+                        <h1 className="font-bold text-gray-900 text-xl">
+                            Cursos de ingles EngVid
+                        </h1>
+                    </div>
+                    <ul className="flex gap-2">
+                        <li className="border border-gray-500 rounded-xl px-2">
+                            Beginner
+                        </li>
+                        <li className="border border-gray-500 rounded-xl px-2">
+                            Intermediate
+                        </li>
+                    </ul>
+                </header>
+                <section>
+                    <div className="flex bg-white rounded-md shadow overflow-hidden p-2 gap-2">
+                        <img
+                            className="w-12 h-12 rounded-md"
+                            src="https://spectrumculture.com/wp-content/uploads/2018/05/avtar.jpg"
+                            alt=""
+                        />
+                        <div className="flex gap-2">
+                            <div className="flex flex-col">
+                                <h2 className="text-gray-900 font-bold">
+                                    Learning English
+                                </h2>
+                                <span className="text-gray-400 text-sm">
+                                    Beginner
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section className="bg-white shadow h-screen w-1/2 p-8 flex flex-col gap-4">
+                <div className="rounded-xl overflow-hidden shadow">
+                    <iframe
+                        className="w-full h-64"
+                        src="https://www.youtube.com/embed/u7OcCscC7Mo?modestbranding=1&title=&autohide=1&wmode=transparent&rel=0&showinfo=0&theme=light&enablejsapi=1&origin=https://www.engvid.com"
+                    ></iframe>
+                </div>
+                <div>
+                    Level:{' '}
+                    <span className="border bg-gray-300 text-gray-500 px-2 rounded-xl">
+                        Beginner
+                    </span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                    English for Career
+                </h3>
+                <p className="text-sm text-gray-400">
+                    In this course you learn some of english with videos of
+                    endvid so, take chair a learn a litle of english very easy
+                </p>
+                <button className="bg-red-500 text-white rounded-3xl px-4 py-2">
+                    Subscribirte al Canal
+                </button>
+            </section>
+        </main>
+    );
 }
