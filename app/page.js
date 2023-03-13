@@ -115,14 +115,11 @@ export default function Home() {
                 </section>
             </section>
             {watchCourse !== '' && (
-                <section className="bg-white order-1 md:order-2 shadow h-screen md:w-1/2 p-8 flex flex-col gap-4">
+                <section className="bg-white order-1 md:order-2 shadow h-screen md:w-1/2 p-8 ">
                     {watchCourse.map((main, index) => {
                         return (
-                            <>
-                                <div
-                                    key={index}
-                                    className="rounded-xl overflow-hidden shadow h-96 md:h-[450px]"
-                                >
+                            <div key={index} className="flex flex-col gap-4">
+                                <div className="rounded-xl overflow-hidden shadow h-96 md:h-[450px]">
                                     <iframe
                                         className="w-full h-full"
                                         src={main.videoLink}
@@ -146,7 +143,7 @@ export default function Home() {
                                 >
                                     Subscribirte al Canal
                                 </a>
-                            </>
+                            </div>
                         );
                     })}
                 </section>
