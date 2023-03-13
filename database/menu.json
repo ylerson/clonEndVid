@@ -1,0 +1,68 @@
+{
+  "levels": [
+    {
+      "id": "8",
+      "name": "1-Beginner"
+    },
+    {
+      "id": "9",
+      "name": "2-Intermediate"
+    },
+    {
+      "id": "10",
+      "name": "3-Advanced"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "128964",
+      "name": "Adam",
+      "avatar": "//www.gravatar.com/avatar/e7f5b219fec097a7843b9b2bdce11962?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "786",
+      "name": "Alex",
+      "avatar": "//www.gravatar.com/avatar/a696b2b37d4593bf82f402e905d5c1ae?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "252823",
+      "name": "Benjamin",
+      "avatar": "//www.gravatar.com/avatar/bd04f00e0b8307d1bfbcf364c14183f6?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "81812",
+      "name": "Emma",
+      "avatar": "//www.gravatar.com/avatar/51ce2a2d46c539df546860882ccb7bab?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "251538",
+      "name": "Gill",
+      "avatar": "//www.gravatar.com/avatar/243c0dbbd5c3624416aad33c1d108bb5?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "252825",
+      "name": "Jade",
+      "avatar": "//www.gravatar.com/avatar/c07d8ac0b28c62a895f134a3dda02d1c?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "6",
+      "name": "James",
+      "avatar": "//www.gravatar.com/avatar/20934db50db6aac85d751755abb4f88b?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "42401",
+      "name": "Jon",
+      "avatar": "//www.gravatar.com/avatar/39b4801bf8b7aba81ed0e375b6af03a6?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "3",
+      "name": "Rebecca",
+      "avatar": "//www.gravatar.com/avatar/fa89abfe7f076aedbd3387d306770da8?s=24&r=x&d=wavatar"
+    },
+    {
+      "id": "788",
+      "name": "Ronnie",
+      "avatar": "//www.gravatar.com/avatar/2a596bc022df8bd33b2e81ee7e917e99?s=24&r=x&d=wavatar"
+    }
+  ]
+}
