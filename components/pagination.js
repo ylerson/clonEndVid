@@ -26,7 +26,11 @@ const Pagination = ({
     return (
         <div className="flex justify-center items-center gap-2">
             <button
-                className="bg-white shadow rounded-md px-4 "
+                className={
+                    currentPage === 1
+                        ? 'hidden'
+                        : 'bg-white shadow rounded-md px-4 text-center'
+                }
                 disabled={currentPage === 1}
                 onClick={() => onPageChange(currentPage - 1)}
             >
