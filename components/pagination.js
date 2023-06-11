@@ -1,4 +1,5 @@
 import React from 'react';
+import {ArrowLeft, DoubleArrowLeft, DoubleArrowRight} from './Icon';
 
 const Pagination = ({
     currentPage,
@@ -34,22 +35,22 @@ const Pagination = ({
                 disabled={currentPage === 1}
                 onClick={() => onPageChange(currentPage - 1)}
             >
-                ⟪
+                <ArrowLeft />
             </button>
             <button
                 onClick={() => onPageChange(1)}
                 className="bg-white shadow rounded-md px-4 "
             >
-                ⟪⟪
+                <DoubleArrowLeft />
             </button>
 
             {visiblePages.map((pageNumber) => (
                 <button
                     key={pageNumber}
-                    className={`bg-white shadow rounded-md px-4 py-2 ${
+                    className={`shadow rounded-md px-4 py-2 ${
                         currentPage === pageNumber
                             ? 'bg-blue-500 text-white'
-                            : 'hover:bg-gray-200'
+                            : 'bg-gray-200 text-black'
                     }`}
                     onClick={() => onPageChange(pageNumber)}
                 >
@@ -66,7 +67,7 @@ const Pagination = ({
                 disabled={currentPage === totalPages}
                 onClick={() => onPageChange(currentPage + 1)}
             >
-                ⟫
+                <DoubleArrowRight />
             </button>
         </div>
     );
