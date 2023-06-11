@@ -83,7 +83,7 @@ export default function Home() {
                                             individual.title
                                         )
                                     }
-                                    className="flex bg-white rounded-md shadow overflow-hidden p-2 gap-2"
+                                    className="flex cursor-pointer bg-white rounded-md shadow overflow-hidden p-2 gap-2"
                                 >
                                     <img
                                         className="w-12 h-12 rounded-md"
