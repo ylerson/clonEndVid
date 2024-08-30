@@ -37,11 +37,11 @@ export default function Home() {
     };
 
     return (
-        <main className="bg-gray-100 flex flex-col md:flex-row">
+        <main className="bg-gray-100 flex flex-col md:flex-row dark:bg-gray-900 dark:text-gray-100">
             <section className="flex flex-col p-8 gap-4 md:w-1/2 order-2 md:order-1">
                 <header className="flex flex-col gap-4">
                     <div>
-                        <h1 className="font-bold text-gray-900 text-xl">
+                        <h1 className="font-bold text-gray-900 dark:text-white text-xl">
                             Cursos de ingles EngVid
                         </h1>
                     </div>
@@ -83,7 +83,7 @@ export default function Home() {
                                             individual.title
                                         )
                                     }
-                                    className="flex cursor-pointer bg-white rounded-md shadow overflow-hidden p-2 gap-2"
+                                    className="flex cursor-pointer bg-white dark:bg-gray-700 dark:text-white rounded-md shadow overflow-hidden p-2 gap-2"
                                 >
                                     <img
                                         className="w-12 h-12 rounded-md"
@@ -92,7 +92,7 @@ export default function Home() {
                                     />
                                     <div className="flex gap-2">
                                         <div className="flex flex-col">
-                                            <h2 className="text-gray-900 font-bold">
+                                            <h2 className="text-gray-900 dark:text-gray-100 font-bold">
                                                 {individual.title}
                                             </h2>
                                             <span className="text-gray-400 text-sm">
@@ -115,7 +115,7 @@ export default function Home() {
                 </section>
             </section>
             {watchCourse !== '' && (
-                <section className="bg-white order-1 md:order-2 shadow h-screen md:w-1/2 p-8 ">
+                <section className="bg-white dark:bg-gray-800 order-1 md:order-2 shadow h-screen md:w-1/2 p-8 ">
                     {watchCourse.map((main, index) => {
                         return (
                             <div key={index} className="flex flex-col gap-4">
@@ -131,7 +131,7 @@ export default function Home() {
                                         {levels}
                                     </span>
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900">
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
                                     {main.title}
                                 </h3>
                                 <p className="text-sm text-gray-400">

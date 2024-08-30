@@ -30,7 +30,7 @@ const Pagination = ({
                 className={
                     currentPage === 1
                         ? 'hidden'
-                        : 'bg-white shadow rounded-md px-4 text-center'
+                        : 'bg-white dark:bg-gray-700 shadow rounded-md px-4 text-center'
                 }
                 disabled={currentPage === 1}
                 onClick={() => onPageChange(currentPage - 1)}
@@ -39,7 +39,7 @@ const Pagination = ({
             </button>
             <button
                 onClick={() => onPageChange(1)}
-                className="bg-white shadow rounded-md px-4 "
+                className="bg-white dark:bg-gray-700 shadow rounded-md px-4 "
             >
                 <DoubleArrowLeft />
             </button>
@@ -50,7 +50,7 @@ const Pagination = ({
                     className={`shadow rounded-md px-4 py-2 ${
                         currentPage === pageNumber
                             ? 'bg-blue-500 text-white'
-                            : 'bg-gray-200 text-black'
+                            : 'bg-gray-200 dark:bg-gray-500 text-black'
                     }`}
                     onClick={() => onPageChange(pageNumber)}
                 >
@@ -62,7 +62,7 @@ const Pagination = ({
                 className={
                     currentPage === totalPages
                         ? 'hidden'
-                        : 'bg-white shadow rounded-md px-4 text-center'
+                        : 'bg-white dark:bg-gray-700 shadow rounded-md px-4 text-center'
                 }
                 disabled={currentPage === totalPages}
                 onClick={() => onPageChange(currentPage + 1)}
